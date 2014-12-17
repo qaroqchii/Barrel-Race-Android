@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/bouncing_ball_surface"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/bouncing_ball_surface"
+        android:background="#BF360C"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/ic_play"
+            android:contentDescription="@null" />
+
+        <ImageButton
+            android:id="@+id/reset_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/play_button"
+            android:background="@drawable/ic_reset"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_button"
+            android:layout_marginTop="15dp"
+            android:background="#BF360C"
+            android:gravity="center"
+            android:text="@string/_00_00_00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

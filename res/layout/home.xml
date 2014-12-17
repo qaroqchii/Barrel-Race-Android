@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_start_button"
+        android:drawablePadding="10sp"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_settings_button"
+        android:drawablePadding="10sp"
+        android:text="@string/settings"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/highscore"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_highscore"
+        android:drawablePadding="10sp"
+        android:text="@string/highscore"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>
